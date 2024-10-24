@@ -1,45 +1,108 @@
 body {
-    background-color: #1e1e1e;
+    background-color: #191919;
 }
 
 #main-container {
     padding: 10px;
 }
 
-.navbar {
+.section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #331D2C;
+    background-color: #202020;
     border-radius: 20px;
     padding: 10px 20px;
+    margin: 10px 10px;
     min-width: 800px;
+    border-top: 1px solid #333; /* Dark border for the navbar */
+    border-bottom: 1px solid #333; /* Dark border for the navbar */
+    position: relative;
 }
 
 .navbar a {
     color: #d1d1d1;
     text-decoration: none;
     margin: 0 15px;
-    display: flex;
-    align-items: center;
     font-size: 16px;
+    position: relative; /* Required for active pseudo-elements positioning */
+    align-items: center;    
+}
+
+.navbar a.active::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #bbb, transparent);
+}
+
+.navbar a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #bbb, transparent);
 }
 
 .navbar a:hover {
     color: #ffffff;
 }
 
-/* Icon and text spacing */
-.navbar a span {
-    margin-left: 5px;
-}
-
-/* Navbar icon styles */
 .navbar a .icon {
-    font-size: 18px;
+    margin-right: 5px; /* Add some space between the icon and the text */
 }
 
-/* Container for left-aligned links */
-.left-links {
+.navbar a:hover img {
+    filter: brightness(0) invert(1); /* Changes the icon color to white */
+}
+
+.navbar a img {
+    vertical-align: middle; /* Aligns the image vertically with the text */
+}
+
+
+/* MAIN PAGE */
+.body {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #191919;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    min-width: 800px;
+    position: relative;
+}
+
+#profile-photo {
+    border-radius: 50%;
+    width: 200px;
+    border: 5px solid #555;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.row1 {
+    display: flex;
+    flex: 1;
+}
+
+.row1 .column {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* Second row styling */
+.row2 {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
 }
