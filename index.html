@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -30,13 +31,13 @@
         
         <!-- User Avatar -->
         <figure class="avatar-box">
-          <img class="avatar" src="assets/images/profile.jpg" alt="Arpit Dave" width="80">
+          <img class="avatar" src="assets/images/profile-1.png" alt="Arpit Dave" width="80">
         </figure>
 
         <!-- User Info -->
         <div class="info-content">
           <h1 class="name" title="Arpit Dave">Arpit Dave</h1>
-          <p class="title" id="asset-title">When in doubt, visualize the data 🔍</p>
+          <p class="title" id="asset-title">Data Scientist & Business Enthusiast 💼</p>
         </div>
 
         <!-- Toggle Button for Contact Details -->
@@ -148,9 +149,34 @@
         </header>
 
         <section class="home-text">
-          <p>I'm a Software Developer who believes that technology can do more than just automate mundane tasks—it can help solve some of life's biggest challenges...</p>
+          <p>
+            I’m a Data & Business Analytics enthusiast who believes data isn’t just numbers—it's a powerful story waiting to be told. I thrive on turning complex data sets into clear, actionable insights that drive smarter business decisions. With a keen eye on both the technical and strategic sides, I bridge the gap between data and real-world outcomes.
+            <br>
+            <br>
+            From building AI-powered recommendation engines to optimizing business strategies through data insights, I’m always in the thick of it, coding, analyzing, and strategizing. Whether it’s identifying trends in big data or developing models that predict the future, I use analytics to make data work harder for businesses—and smarter for people.
+            
+            <p>My Philosophy</p>
+            Technology isn't just about automation—it’s about innovation. I’m passionate about how data can create a tangible impact, whether by helping businesses grow or by solving some of the world’s toughest challenges. My work is a blend of strategy, tech, and a deep curiosity to learn how data shapes everything around us.
+            <br>
+            <br>            
+            I’m motivated by a desire to turn insights into action. Whether it’s brainstorming a new business strategy or diving deep into the latest AI models, I’m always excited to tackle a new challenge and find that "aha!" moment in data.
+                        Curious about how data can reshape your world? Let’s talk! Feel free to reach out through my contact details below—I’m always open to discussing how we can turn data into a meaningful business advantage.            
+
+          </p>
         </section>
         
+        <header>
+          <h2 class="h2 article-title">Hi there! I'm Arpit 👋</h2>
+        </header>
+
+        <!-- Substack Feed Script -->
+        <script type="text/javascript">
+          function resizeIframe(iframe) {
+            iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+          }
+        </script>          
+        <iframe onload="resizeIframe(this)" src="./assets/components/top-posts.html" width="100%" style="border: none;"></iframe>
+
       </article>
 
       <!-- Work Section -->
@@ -320,18 +346,9 @@
           <h2 class="h2 article-title">My Thought Journal</h2>
         </header>
 
-        <div id="substack-feed-embed"></div>
 
         <!-- Substack Feed Script -->
-        <script>
-          window.SubstackFeedWidget = {
-            substackUrl: "arpitdave.substack.com",
-            posts: 6,
-            layout: "center",
-            colors: { primary: "#FFFFFF", secondary: "#B6B6B6", background: "#1e1e1f" }
-          };
-        </script>
-        <script src="https://substackapi.com/embeds/feed.js" async></script>
+        <iframe id="new-posts" src="./assets/components/new-posts.html" width="100%" style="border: none;"></iframe>      
       </article>
 
     </div>
