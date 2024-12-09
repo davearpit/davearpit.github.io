@@ -1,24 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Under Maintenance</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="stars"></div>
-    <div class="container">
-        <img src="https://gifdb.com/images/high/illustration-astronaut-loading-fhpx2jib1ftoo057.webp" alt="Astronaut Loading" class="gif">
-        <h1 class="prevent-select">Hang Tight! I'm Working on Something Stellar 🚀</h1>
-    </div>
-</body>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JR3E4X6E3K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-JR3E4X6E3K');
-</script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arpit Dave</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
+
+  <!-- Link to Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Import Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Main Content Wrapper -->
+  <main>
+
+    <!-- Sidebar Section -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        
+        <!-- User Avatar -->
+        <figure class="avatar-box">
+          <img class="avatar" src="assets/images/profile-1.png" alt="Arpit Dave" width="80">
+        </figure>
+
+        <!-- User Info -->
+        <div class="info-content">
+          <h1 class="name" title="Arpit Dave">Arpit Dave</h1>
+          <p class="title" id="asset-title">Data-Driven Thinker 💡</p>
+        </div>
+
+        <!-- Toggle Button for Contact Details -->
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <!-- Contact and Social Links -->
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <!-- Contact Information -->
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:arpitdave321@gmail.com" class="contact-link">arpitdave321@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+919717137753" class="contact-link">+91-9717137753</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="1997-01-28">January 28, 1997</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Delhi, India</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <!-- Social Media Links -->
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/arpit-dave/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://arpitdave.substack.com/welcome" class="social-link">
+              <ion-icon name="bookmarks-outline"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.instagram.com/arpitdave_2801/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>Home</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Work</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Home Section -->
+      <article class="home active" data-page="home">
+        <header>
+          <h2 class="h2 article-title">💫 About Me</h2>
+        </header>
+
+        <section class="home-text">
+          <p>Hey there! 👋 I'm <strong>Arpit</strong>—a Software Developer with a passion for uncovering the potential of technology to address some of life's most complex challenges. To me, tech isn’t just about automating the mundane; it’s about exploring possibilities, whether that’s solving intricate biological mysteries that once took decades or helping businesses connect with their audiences in more meaningful ways. 🧬🔧</p>
+    
+          <p>I thrive on the intersection of tech, strategy, and curiosity. From crafting AI models to designing backend systems, I’m always looking for opportunities to use data creatively—whether it’s answering tough questions about why some businesses fail or shedding light on breakthroughs in biology. The right data, in the right hands, can truly unlock answers to questions we didn’t even know how to ask.</p>      
+        </section>
+        
+        <h2 class="h3 service-title">📚 Top Posts from the Blog</h2>
+
+        <section class="home-text">
+          <p>Curious about data and tech? 🤖 My blog’s a mix of what I’m exploring and creating—AI, business insights, and more. 🚀 Check it out!
+
+          </p>
+        </section>
+        
+        <!-- Substack Feed Script -->
+        <div id="substack-feed-embed"></div>
+
+        <script>
+          window.SubstackFeedWidget = {
+            substackUrl: "arpitdave.substack.com",
+            posts: 2,
+            filter: "top",
+            layout: "center",
+            colors: {
+              primary: "#FFFFFF",
+              secondary: "#B6B6B6",
+              background: "#1E1E1F",
+            }
+          };
+        </script>
+        <script src="https://substackapi.com/embeds/feed.js" async></script>
+      
+      </article>
+
+      <!-- Work Section -->
+      <article class="work" data-page="work">
+        <header>
+          <h2 class="h2 article-title">My Career Overview</h2>
+        </header>
+
+        <!-- Experience Timeline -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Senior Integration Engineer</h4>
+              <a href="https://www.observe.ai/"><span>Observe AI</span></a>
+              <p class="timeline-text">
+                Architecting robust system integrations, optimizing APIs, managing data pipelines, and ensuring scalable, high-performance solutions to support AI-driven customer experience workflows.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Senior Backend Engineer</h4>
+              <a href="https://caw.tech/"><span>CAW Studios</span></a>
+              <p class="timeline-text">
+                Built a high-performance analytics dashboard that turns data into actionable insights. It leverages the speed of ScyllaDB, the versatility of MongoDB, and the scalability of NestJS—delivering real-time value in the streaming world.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Senior Integration Engineer - Contract</h4>
+              <a href="https://www.haptik.ai/"><span>Jio Haptik</span></a>
+              <p class="timeline-text">
+                Crafted Generative AI-powered chatbots that not only converse but also elevate client experiences, all while juggling tech stacks and team dynamics like a seasoned conductor leading a symphony!
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Fullstack Software Developer</h4>
+              <a href="https://cginfinity.com/"><span>CG Infinity</span></a>
+              <p class="timeline-text">
+                Experienced in transforming backend systems for energy and trading sectors using .NET, optimizing performance with CI/CD pipelines and automated testing, all while keeping a keen eye on scalability and maintainability.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!-- Education Timeline -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Boston University</h4>
+              <span>MS - Applied Data Analytics</span>
+              <p class="timeline-text">
+                Developing critical skills to analyze, interpret, and leverage data for transformative solutions.  
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Shiv Nadar University</h4>
+              <span>BTech - Electronics & Communication Engineering</span>
+              <p class="timeline-text">
+                Gained expertise in engineering principles, critical thinking, and innovation, fostering a deep understanding of technology's potential.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+      <!-- Portfolio Section -->
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">My Creations</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/davearpit/cinesense">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/project-1.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CineSense</h3>
+                <p class="project-category">Smart AI that curates content tailored to you</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/davearpit/signalsync">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/project-2.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Signal Sync</h3>
+                <p class="project-category">AI-driven solution revolutionizing urban traffic flow management</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/davearpit/trisect">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/project-3.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Trisect</h3>
+                <p class="project-category">A dynamic, infinite twist on classic tic-tac-toe.</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/davearpit/autodoc">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/project-4.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AutoDoc</h3>
+                <p class="project-category">Code smarter with automatic DocStrings for every function you write</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!-- Blog Section -->
+      <article class="blog" data-page="blog">
+        <header>
+          <h2 class="h2 article-title">My Thought Journal</h2>
+        </header>
+
+        <section class="home-text">
+          <p>If you're fascinated by how data, tech, and business intersect, check out my blog! 🌐</p>
+          <p>I dive into everything I’m learning, building, and experimenting with—from AI models 🤖 to business strategies 📊 and beyond. It’s where I share the code 💻, the challenges ⚙️, and the insights 💡 I uncover along the way.</p>
+          <p>Join me as I explore new tech 🚀, solve problems 🔍, and document the process! 📚</p>
+        </section>
+
+        <!-- Substack Feed Script -->
+        <div id="substack-feed-embed"></div>
+
+        <script>
+          window.SubstackFeedWidget = {
+            substackUrl: "arpitdave.substack.com",
+            posts: 4,
+            layout: "center",
+            colors: {
+              primary: "#FFFFFF",
+              secondary: "#B6B6B6",
+              background: "#1E1E1F",
+            }
+          };
+        </script>
+        <script src="https://substackapi.com/embeds/feed.js" async></script>      
+      
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- JavaScript Links -->
+  <script src="assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JR3E4X6E3K"></script>
+
+  <!-- Google Analytics Tracking -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JR3E4X6E3K');
+  </script>
+
+</body>
+
 </html>
