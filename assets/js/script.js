@@ -122,3 +122,9 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+// Resizing the Iframe according to webpage size
+function resizeIframe(iframe) {
+  iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+  console.log('[RESIZING THE IFRAME] ', iframe.height)
+}
+

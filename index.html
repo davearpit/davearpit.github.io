@@ -37,7 +37,7 @@
         <!-- User Info -->
         <div class="info-content">
           <h1 class="name" title="Arpit Dave">Arpit Dave</h1>
-          <p class="title" id="asset-title">Data Scientist & Business Enthusiast 💼</p>
+          <p class="title" id="asset-title">Data-Driven Thinker 💡</p>
         </div>
 
         <!-- Toggle Button for Contact Details -->
@@ -145,38 +145,41 @@
       <!-- Home Section -->
       <article class="home active" data-page="home">
         <header>
-          <h2 class="h2 article-title">Hi there! I'm Arpit 👋</h2>
+          <h2 class="h2 article-title">💫 About Me</h2>
         </header>
 
         <section class="home-text">
-          <p>
-            I’m a Data & Business Analytics enthusiast who believes data isn’t just numbers—it's a powerful story waiting to be told. I thrive on turning complex data sets into clear, actionable insights that drive smarter business decisions. With a keen eye on both the technical and strategic sides, I bridge the gap between data and real-world outcomes.
-            <br>
-            <br>
-            From building AI-powered recommendation engines to optimizing business strategies through data insights, I’m always in the thick of it, coding, analyzing, and strategizing. Whether it’s identifying trends in big data or developing models that predict the future, I use analytics to make data work harder for businesses—and smarter for people.
-            
-            <p>My Philosophy</p>
-            Technology isn't just about automation—it’s about innovation. I’m passionate about how data can create a tangible impact, whether by helping businesses grow or by solving some of the world’s toughest challenges. My work is a blend of strategy, tech, and a deep curiosity to learn how data shapes everything around us.
-            <br>
-            <br>            
-            I’m motivated by a desire to turn insights into action. Whether it’s brainstorming a new business strategy or diving deep into the latest AI models, I’m always excited to tackle a new challenge and find that "aha!" moment in data.
-                        Curious about how data can reshape your world? Let’s talk! Feel free to reach out through my contact details below—I’m always open to discussing how we can turn data into a meaningful business advantage.            
+          <p>Hey there! 👋 I'm <strong>Arpit</strong>—a Software Developer with a passion for uncovering the potential of technology to address some of life's most complex challenges. To me, tech isn’t just about automating the mundane; it’s about exploring possibilities, whether that’s solving intricate biological mysteries that once took decades or helping businesses connect with their audiences in more meaningful ways. 🧬🔧</p>
+    
+          <p>I thrive on the intersection of tech, strategy, and curiosity. From crafting AI models to designing backend systems, I’m always looking for opportunities to use data creatively—whether it’s answering tough questions about why some businesses fail or shedding light on breakthroughs in biology. The right data, in the right hands, can truly unlock answers to questions we didn’t even know how to ask.</p>      
+        </section>
+        
+        <h2 class="h3 service-title">📚 Top Posts from the Blog</h2>
+
+        <section class="home-text">
+          <p>Curious about data and tech? 🤖 My blog’s a mix of what I’m exploring and creating—AI, business insights, and more. 🚀 Check it out!
 
           </p>
         </section>
         
-        <header>
-          <h2 class="h2 article-title">Hi there! I'm Arpit 👋</h2>
-        </header>
-
         <!-- Substack Feed Script -->
-        <script type="text/javascript">
-          function resizeIframe(iframe) {
-            iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
-          }
-        </script>          
-        <iframe onload="resizeIframe(this)" src="./assets/components/top-posts.html" width="100%" style="border: none;"></iframe>
+        <div id="substack-feed-embed"></div>
 
+        <script>
+          window.SubstackFeedWidget = {
+            substackUrl: "arpitdave.substack.com",
+            posts: 2,
+            filter: "top",
+            layout: "center",
+            colors: {
+              primary: "#FFFFFF",
+              secondary: "#B6B6B6",
+              background: "#1E1E1F",
+            }
+          };
+        </script>
+        <script src="https://substackapi.com/embeds/feed.js" async></script>
+      
       </article>
 
       <!-- Work Section -->
@@ -200,15 +203,7 @@
               <h4 class="h4 timeline-item-title">Senior Integration Engineer</h4>
               <a href="https://www.observe.ai/"><span>Observe AI</span></a>
               <p class="timeline-text">
-                Designed and deployed a data-driven analytics dashboard for a top Indian VOD platform, using ScyllaDB for high-throughput data and MongoDB Charts for real-time visualization to boost marketing and improve business decisions.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Senior Integration Engineer - Contract</h4>
-              <a href="https://www.haptik.ai/"><span>Jio Haptik</span></a>
-              <p class="timeline-text">
-                Led the implementation of Generative AI chatbots across sectors, optimizing performance and engagement through data analytics while ensuring timely delivery and client satisfaction for clients like Paytm, Kotak Life Insurance, Cars24, and Upstox.
+                Architecting robust system integrations, optimizing APIs, managing data pipelines, and ensuring scalable, high-performance solutions to support AI-driven customer experience workflows.
               </p>
             </li>
 
@@ -216,7 +211,15 @@
               <h4 class="h4 timeline-item-title">Senior Backend Engineer</h4>
               <a href="https://caw.tech/"><span>CAW Studios</span></a>
               <p class="timeline-text">
-                Designed and deployed a data-driven analytics dashboard for a top Indian VOD platform, using ScyllaDB for high-throughput data and MongoDB Charts for real-time visualization to boost marketing and improve business decisions.
+                Built a high-performance analytics dashboard that turns data into actionable insights. It leverages the speed of ScyllaDB, the versatility of MongoDB, and the scalability of NestJS—delivering real-time value in the streaming world.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Senior Integration Engineer - Contract</h4>
+              <a href="https://www.haptik.ai/"><span>Jio Haptik</span></a>
+              <p class="timeline-text">
+                Crafted Generative AI-powered chatbots that not only converse but also elevate client experiences, all while juggling tech stacks and team dynamics like a seasoned conductor leading a symphony!
               </p>
             </li>
 
@@ -224,7 +227,7 @@
               <h4 class="h4 timeline-item-title">Fullstack Software Developer</h4>
               <a href="https://cginfinity.com/"><span>CG Infinity</span></a>
               <p class="timeline-text">
-                Revamped backend infrastructure for a U.S.-based precious metals trading firm, reducing latency, enhancing database integration, and expanding functionality to optimize operations and support business growth. Delivered in-depth performance analysis for a Fortune 500 data security application, providing strategic insights to boost system performance and strengthen data protection.
+                Experienced in transforming backend systems for energy and trading sectors using .NET, optimizing performance with CI/CD pipelines and automated testing, all while keeping a keen eye on scalability and maintainability.
               </p>
             </li>
 
@@ -249,7 +252,7 @@
               <h4 class="h4 timeline-item-title">Boston University</h4>
               <span>MS - Applied Data Analytics</span>
               <p class="timeline-text">
-
+                Developing critical skills to analyze, interpret, and leverage data for transformative solutions.  
               </p>
             </li>
 
@@ -257,8 +260,7 @@
               <h4 class="h4 timeline-item-title">Shiv Nadar University</h4>
               <span>BTech - Electronics & Communication Engineering</span>
               <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
+                Gained expertise in engineering principles, critical thinking, and innovation, fostering a deep understanding of technology's potential.
               </p>
             </li>
 
@@ -268,7 +270,7 @@
 
       </article>
 
-      <!-- Projects Section -->
+      <!-- Portfolio Section -->
       <article class="portfolio" data-page="portfolio">
         <header>
           <h2 class="h2 article-title">My Creations</h2>
@@ -287,8 +289,8 @@
                   <img src="assets/images/project-1.png" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">CineSense (In Development)</h3>
-                <p class="project-category">Perfect-fit content recommendations so good, you’ll never scroll again</p>
+                <h3 class="project-title">CineSense</h3>
+                <p class="project-category">Smart AI that curates content tailored to you</p>
               </a>
             </li>
 
@@ -301,8 +303,8 @@
                   <img src="assets/images/project-2.png" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Signal Sync (In Development)</h3>
-                <p class="project-category">Traffic signals that think, adapt, and keep roads flowing smoothly</p>
+                <h3 class="project-title">Signal Sync</h3>
+                <p class="project-category">AI-driven solution revolutionizing urban traffic flow management</p>
               </a>
             </li>
 
@@ -315,8 +317,8 @@
                   <img src="assets/images/project-3.png" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Trisect (In Development)</h3>
-                <p class="project-category">A twist on tic-tac-toe—dynamic, evolving, and always unpredictable</p>
+                <h3 class="project-title">Trisect</h3>
+                <p class="project-category">A dynamic, infinite twist on classic tic-tac-toe.</p>
               </a>
             </li>
 
@@ -329,7 +331,7 @@
                   <img src="assets/images/project-4.png" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">AutoDoc (In Development)</h3>
+                <h3 class="project-title">AutoDoc</h3>
                 <p class="project-category">Code smarter with automatic DocStrings for every function you write</p>
               </a>
             </li>
@@ -346,9 +348,29 @@
           <h2 class="h2 article-title">My Thought Journal</h2>
         </header>
 
+        <section class="home-text">
+          <p>If you're fascinated by how data, tech, and business intersect, check out my blog! 🌐</p>
+          <p>I dive into everything I’m learning, building, and experimenting with—from AI models 🤖 to business strategies 📊 and beyond. It’s where I share the code 💻, the challenges ⚙️, and the insights 💡 I uncover along the way.</p>
+          <p>Join me as I explore new tech 🚀, solve problems 🔍, and document the process! 📚</p>
+        </section>
 
         <!-- Substack Feed Script -->
-        <iframe id="new-posts" src="./assets/components/new-posts.html" width="100%" style="border: none;"></iframe>      
+        <div id="substack-feed-embed"></div>
+
+        <script>
+          window.SubstackFeedWidget = {
+            substackUrl: "arpitdave.substack.com",
+            posts: 4,
+            layout: "center",
+            colors: {
+              primary: "#FFFFFF",
+              secondary: "#B6B6B6",
+              background: "#1E1E1F",
+            }
+          };
+        </script>
+        <script src="https://substackapi.com/embeds/feed.js" async></script>      
+      
       </article>
 
     </div>
